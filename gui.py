@@ -24,8 +24,11 @@ entry = tk.Entry(root, width=50)
 entry.insert(0,current_dir)
 entry.pack()
 
-button = tk.Button(root, text="Button", command=openDir)
-button.pack()
+select_folder_button = tk.Button(root, text="Select Folder", command=openDir)
+select_folder_button.pack()
+
+organize_button = tk.Button(root, text="Organize", command=openDir)
+organize_button.pack()
 
 root.mainloop()
 
